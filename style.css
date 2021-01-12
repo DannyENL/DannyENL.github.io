@@ -8,3 +8,26 @@
 	color:#BDA89A;
 	font-size: 1.5em;
 }
+
+@media screen and (max-width: 767px) {
+  div.kim_title {
+    font-size: 0.75em;
+  }
+  div.page_title {
+    font-size: 0.75em;
+  }
+  div.page_body_content {
+    font-size: 0.75em;
+  }
+  img.rand_gallery {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  img.rand_gallery {
+    width: 100px;
+    height: auto;
+  }
+}
