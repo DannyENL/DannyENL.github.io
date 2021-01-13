@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="random_image.js"></script>
+    <script src="gallery_page.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
 </html>
 
-<body style="background-color:#EBE5E0" onload="randomise()">
+<body style="background-color:#EBE5E0" onload="gallery_im_enlarge()">
 
 <div class="container-fluid" style="background-color:#EBE5E0; color:#AF9685">
 	<div class="container">
@@ -41,36 +41,33 @@
 	<div class="kim_title"><h1 class="text-center" style="margin-bottom: 1em; font-size: 5em;"><a href="home.html" class="kim_link">Kim Illustrated This</a></h1></div>
 </div>
 
-<div class="container-fluid" style="background-color:#F2F2F2; color:#AF9685">
-	<div class="container">
-		<div class="row vcenter" style="padding-top:2em; padding-bottom:2em">
-			<div class="col-sm-6" align="center">
-				<div style="display: inline-block; text-align: left;">
-					<div class="page_title"><h1 style="font-size:3em">Contact</h1></div>
-					<div class="page_body_content"><h3 style="font-size:1.5em">There are a few ways for you to get in contact with me. Feel free to get in touch!<br><br>
-					<a href="mailto:kimsemail@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Email: kimsemail@gmail.com</a><br><br>
-					<a href="https://www.instagram.com/kimillustratedthis/"><span class="glyphicon glyphicon-user"></span> Instagram: KimIllustratedThis</a><br><br>
-					<b><span class="glyphicon glyphicon-earphone"></span> +077 42489 294829479 41841</b></h3></div>
-				</div>
-			</div>
-			<div class="col-sm-6 center-block" align="center">
-				<img src="hex.png">
-			</div>
-		</div>
-	</div>
+<div class="container-fluid" style="background-color:#F2F2F2; color:#AF9685; padding-top:1em; padding-bottom:2em;" align="center">
+	<div class="page_title"><h1 style="font-size:3em">Gallery</h1></div>
+	<div class="page_body_content"><h3 style="font-size:1.5em">Click on an image to take a closer look.</h3></div>
 </div>
 
 <div class="container-fluid" style="background-color:#EBE5E0" id="bottom_gallery">
 	<div align="center" style="padding-top:2em; padding-bottom:2em;">
-		<img style="margin:1em;" src="loading.jpg" class="rand_gallery" height="270" width="auto" id="gallery_im1">
-		<img style="margin:1em;" src="loading.jpg" class="rand_gallery" height="270" width="auto" id="gallery_im2">
-		<img style="margin:1em;" src="loading.jpg" class="rand_gallery" height="270" width="auto" id="gallery_im3">
+		<img style="margin:1em;" src="0.jpg" height="300" width="auto" class="gallery_im" name="gallery_im">
+		<img style="margin:1em;" src="1.jpg" height="300" width="auto" class="gallery_im" name="gallery_im">
+		<img style="margin:1em;" src="2.jpg" height="300" width="auto" class="gallery_im" name="gallery_im">
+		<img style="margin:1em;" src="3.jpg" height="300" width="auto" class="gallery_im" name="gallery_im">
+		<img style="margin:1em;" src="4.jpg" height="300" width="auto" class="gallery_im" name="gallery_im">
+		<img style="margin:1em;" src="5.jpg" height="300" width="auto" class="gallery_im" name="gallery_im">
+		<img style="margin:1em;" src="6.jpg" height="300" width="auto" class="gallery_im" name="gallery_im">
+		<img style="margin:1em;" src="7.jpg" height="300" width="auto" class="gallery_im" name="gallery_im">
+		<img style="margin:1em;" src="8.jpg" height="300" width="auto" class="gallery_im" name="gallery_im">
+		<img style="margin:1em;" src="9.jpg" height="300" width="auto" class="gallery_im" name="gallery_im">
+		<img style="margin:1em;" src="10.jpg" height="300" width="auto" class="gallery_im">
 	</div>
 </div>
 
 <div class="container-fluid" style="background-color:#F2F2F2; color:#AF9685">
 	<p style="padding-top:3em; padding-bottom:2em;" align="center">This is text for the footer. If you look at the footer, you'll see this text. This is footer text. It's text for the footer.</p>
 </div>
+
+<div class="overlay" id="overlay"></div>
+<img class="overlay" id="big_photo">
 
 </body>
 </html>

@@ -9,6 +9,24 @@
 	font-size: 1.5em;
 }
 
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:rgba(0,0,0,0.5);
+}
+
+.gallery_im {
+	cursor: pointer;
+}
+
+.kim_link { color: #AF9685; }
+.kim_link:link { color: #AF9685; }
+.kim_link:visited { color: #AF9685; }
+.kim_link:hover { color: #AF9685; }
+.kim_link:active { color: #AF9685; }
+
 @media screen and (max-width: 767px) {
   div.kim_title {
     font-size: 0.75em;
@@ -22,6 +40,9 @@
   img.rand_gallery {
     width: 150px;
     height: auto;
+  }
+  img.gallery_im {
+    height: 150px;
   }
 }
 
