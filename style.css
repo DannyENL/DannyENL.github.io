@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 767px) {
   div.kim_title {
-    font-size: 0.75em;
+    font-size: 0.7em;
   }
   div.page_title {
     font-size: 0.75em;
@@ -38,17 +38,10 @@
     font-size: 0.75em;
   }
   img.rand_gallery {
-    width: 150px;
+    width: 26%;
     height: auto;
   }
   img.gallery_im {
     height: 150px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  img.rand_gallery {
-    width: 100px;
-    height: auto;
   }
 }

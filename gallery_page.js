@@ -1,12 +1,11 @@
 function gallery_im_enlarge() {
 	var list_of_ims = document.getElementsByName("gallery_im");
 	for (var i = 0; i < list_of_ims.length; i++) {
-		list_of_ims[i].addEventListener("click", function(){enable_overlay(i)});
+		list_of_ims[i].addEventListener("click", function(){enable_overlay()});
 	}
 
-	function enable_overlay(im_src) {
-		alert(list_of_ims[im_src].src);
-		document.getElementById("big_photo").src=(list_of_ims[0].src);
+	function enable_overlay() {
+		document.getElementById("big_photo").src=event.target.src
 		document.getElementById("big_photo").style.height="90%";
 		document.getElementById("big_photo").style.width="auto";
 		document.getElementById("overlay").style.height="100%";
