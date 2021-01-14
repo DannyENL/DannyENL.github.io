@@ -9,6 +9,11 @@
 	font-size: 1.5em;
 }
 
+.big_photo {
+	height: 90%;
+	width: auto;
+}	
+
 .overlay {
     position: fixed;
     top: 50%;
@@ -21,11 +26,22 @@
 	cursor: pointer;
 }
 
+.rand_gallery {
+	margin: 1em;
+}
+
 .kim_link { color: #AF9685; }
 .kim_link:link { color: #AF9685; }
 .kim_link:visited { color: #AF9685; }
 .kim_link:hover { color: #AF9685; }
 .kim_link:active { color: #AF9685; }
+
+@media (orientation: portrait) {
+  .big_photo {
+	height: auto;
+	width: 90%;
+  }
+}
 
 @media screen and (max-width: 767px) {
   div.kim_title {
@@ -39,6 +55,7 @@
   }
   img.rand_gallery {
     width: 26%;
+	margin: 0.5em;
     height: auto;
   }
   img.gallery_im {

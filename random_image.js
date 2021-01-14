@@ -1,5 +1,5 @@
 //Random images
-var number_of_im = 10 //highest num including 0
+var number_of_im = 19 //highest num including 0
 function randomise() { //triggered on page load
 	var im1=Math.floor(Math.random() * number_of_im)
 	var im2=Math.floor(Math.random() * number_of_im)
