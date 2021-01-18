@@ -1,6 +1,6 @@
 //Used on the Gallery page to expand images when clicked on
 function gallery_im_enlarge() { //Triggered on page load
-	var list_of_ims = document.getElementsByName("gallery_im"); //Finds all the gallery thumbnail images
+	var list_of_ims = document.getElementsByClassName("gallery_im"); //Finds all the gallery thumbnail images
 	for (var i = 0; i < list_of_ims.length; i++) {
 		list_of_ims[i].addEventListener("click", function(){enable_overlay()}); //Adds an event listener. When the image is clicked it'll trigger enable_overlay
 	}

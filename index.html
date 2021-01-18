@@ -10,7 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--Required for Bootstrap-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!--Required for Bootstrap-->
   </head>
-</html>
 
 <body style="background-color:#F2F2F2" onload="randomise()"> <!--Runs randomise function on page load. This randomises which images are shown at the bottom-->
 
@@ -25,7 +24,7 @@
 				<span class="icon-bar"></span>
 			  </button>
 			</div>
-			<div class="collapse navbar-collapse" id="myNavbar" align="center">
+			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-left"> <!--Left alligned menu items: other site pages-->
 					<li><a href="https://dannyenl.github.io/">Home</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
@@ -44,8 +43,8 @@
 <div class="container-fluid" style="background-color:#F2F2F2; color:#AF9685"> <!--Kim info section-->
 	<div class="container">
 		<div class="row vcenter" style="padding-top:2em; padding-bottom:2em">
-			<div class="col-sm-6 center-block" align="center">
-				<img src="images/tea_lover.png">
+			<div class="col-sm-6 center-block" style="text-align:center;">
+				<img src="images/tea_lover.png" alt="">
 			</div>
 			<div class="col-sm-6">
 				<div style="display: inline-block; text-align: left;">
@@ -58,15 +57,15 @@
 </div>
 
 <div class="container-fluid" style="background-color:#EBE5E0" id="bottom_gallery"> <!--Bottom gallery-->
-	<div align="center" style="padding-top:2em; padding-bottom:2em;">
-		<img src="loading.jpg" class="rand_gallery" height="270" width="auto" id="gallery_im1"> <!--random_image.js changes this image source to a random image-->
-		<img src="loading.jpg" class="rand_gallery" height="270" width="auto" id="gallery_im2"> <!--random_image.js changes this image source to a random image-->
-		<img src="loading.jpg" class="rand_gallery" height="270" width="auto" id="gallery_im3"> <!--random_image.js changes this image source to a random image-->
+	<div style="text-align:center; padding-top:2em; padding-bottom:2em;">
+		<img src="loading.jpg" class="rand_gallery" id="gallery_im1" alt=""> <!--random_image.js changes this image source to a random image-->
+		<img src="loading.jpg" class="rand_gallery" id="gallery_im2" alt=""> <!--random_image.js changes this image source to a random image-->
+		<img src="loading.jpg" class="rand_gallery" id="gallery_im3" alt=""> <!--random_image.js changes this image source to a random image-->
 	</div>
 </div>
 
 <div class="container-fluid" style="background-color:#F2F2F2; color:#AF9685"> <!--Footer-->
-	<p style="padding-top:3em; padding-bottom:2em;" align="center">Website Produced 2021 by Danny Edwards</p>
+	<p style="padding-top:3em; padding-bottom:2em; text-align:center;">Website Produced 2021 by Danny Edwards</p>
 </div>
 
 </body>

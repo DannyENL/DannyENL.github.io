@@ -22,10 +22,14 @@
 
 .gallery_im { /*Image thumbnails from gallery*/
 	cursor: pointer; /*Hovering over it adds a "clickable" mouse cursor*/
+	width: auto;
+	height: 300px;
 }
 
 .rand_gallery { /*Random gallery at the bottom*/
 	margin: 1em;
+	height: 270px;
+	width: auto;
 }
 
 .kim_link { color: #AF9685; } /*Sets color for the "Kim Illustrated This" title link at top of each page.*/
