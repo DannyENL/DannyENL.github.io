@@ -1,73 +1,62 @@
-.vcenter {
+.vcenter { /*Displays item vertically centered in div*/
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+} 
+
+.overlay { /*Shown when an image is expanded on Gallery page*/
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /*Centered on screen*/
+    background:rgba(0,0,0,0.5); /*Transparent dark background overlay which darkens the whole page*/
+	width:100%; /*Cover the full screen*/
+	height:100%;
+	display: none; /*Initially invisible until the Javascript turns it visible*/
 }
 
-.contact {
-	color:#BDA89A;
-	font-size: 1.5em;
-}
-
-.big_photo {
-	height: 90%;
+.big_photo { /*Shown when an image is expanded on Gallery page*/
+	height: 90%; /*Takes up most of the screen*/
 	width: auto;
 }	
 
-.overlay {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background:rgba(0,0,0,0.5);
-	width:100%;
-	height:100%;
-	display: none;
+.gallery_im { /*Image thumbnails from gallery*/
+	cursor: pointer; /*Hovering over it adds a "clickable" mouse cursor*/
 }
 
-.big_photo {
-	width: auto;
-	height: 90%;
-}
-
-
-.gallery_im {
-	cursor: pointer;
-}
-
-.rand_gallery {
+.rand_gallery { /*Random gallery at the bottom*/
 	margin: 1em;
 }
 
-.kim_link { color: #AF9685; }
+.kim_link { color: #AF9685; } /*Sets color for the "Kim Illustrated This" title link at top of each page.*/
 .kim_link:link { color: #AF9685; }
 .kim_link:visited { color: #AF9685; }
 .kim_link:hover { color: #AF9685; }
 .kim_link:active { color: #AF9685; }
 
-@media (orientation: portrait) {
+@media (orientation: portrait) { /*If the display is taller than it is wide, then alter the way the expanded image is resized to better fit the situation*/
   .big_photo {
 	height: auto;
 	width: 90%;
   }
 }
 
-@media screen and (max-width: 767px) {
-  div.kim_title {
+@media screen and (max-width: 767px) { /*Adjust various elements to suit a smaller screen size*/
+  div.kim_title { /*Decrease the title fontsize*/
     font-size: 0.7em;
   }
-  div.page_title {
+  div.page_title { /*Decrease the page title fontsize*/
     font-size: 0.75em;
   }
-  div.page_body_content {
+  div.page_body_content { /*Decrease the page content fontsize*/
     font-size: 0.75em;
   }
-  img.rand_gallery {
+  img.rand_gallery { /*The random gallery images adjust to 26% of the screensize*/
     width: 26%;
 	margin: 0.5em;
     height: auto;
   }
-  img.gallery_im {
+  img.gallery_im { /*The gallery images adjust to 40% of the screensize*/
     width: 40%;
 	margin: 0.5em;
 	height: auto;
