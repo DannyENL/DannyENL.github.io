@@ -32,11 +32,24 @@
 	width: auto;
 }
 
-.kim_link { color: #AF9685; } /*Sets color for the "Kim Illustrated This" title link at top of each page.*/
-.kim_link:link { color: #AF9685; }
-.kim_link:visited { color: #AF9685; }
-.kim_link:hover { color: #AF9685; }
-.kim_link:active { color: #AF9685; }
+.kim_link { /*Sets color for the "Kim Illustrated This" title link at top of each page.*/
+	color: #AF9685; 
+} 
+
+.kim_link:link { 
+	color: #AF9685; 
+}
+.kim_link:visited { 
+	color: #AF9685; 
+}
+
+.kim_link:hover { 
+	color: #AF9685; 
+}
+
+.kim_link:active { 
+	color: #AF9685; 
+}
 
 @media (orientation: portrait) { /*If the display is taller than it is wide, then alter the way the expanded image is resized to better fit the situation*/
   .big_photo {
